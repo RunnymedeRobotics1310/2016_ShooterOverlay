@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" onMouseMoved="#mouseMove" prefHeight="400.0" prefWidth="600.0"
+            style="-fx-border-color: #ff0000;" xmlns="http://javafx.com/javafx/8.0.65"
+            fx:controller="com.chasehaddleton.ShooterOverlay.Controller">
+    <children>
+        <Circle fx:id="circleTarget" layoutX="83.0" layoutY="42.0" radius="9.0" stroke="BLACK" strokeType="INSIDE"
+                strokeWidth="0.0">
+            <fill>
+                <RadialGradient centerX="0.5111111111111111" centerY="0.5" cycleMethod="REPEAT" proportional="false"
+                                radius="0.8255813953488372">
+                    <stops>
+                        <Stop color="BLACK"/>
+                        <Stop color="WHITE" offset="1.0"/>
+                    </stops>
+                </RadialGradient>
+            </fill>
+        </Circle>
+    </children>
+</AnchorPane>
